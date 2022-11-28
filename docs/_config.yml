@@ -1,0 +1,54 @@
+theme: jekyll-theme-minimal
+title: Indiana University Network Science Institute
+description: Project Documentation
+
+logo: "assets/favicon-194x194.png" # path of site logo, e.g. "/assets/images/logo.png"
+
+# Build settings
+include: ["_pages", "pages"]
+## include: - _pages
+
+markdown: kramdown
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+
+collections:
+  pages:
+    output: true
+    #permalink: /:pages/:path/
+    #permalink: /:path/
+    #permalink: /:name/
+
+baseurl: '/test1b'
+
+defaults:
+  # _pages
+  - 
+    scope:
+      path: ""
+      type: pages
+    values:
+      #permalink: /:path/ # make URL of pages in the folder _pages as on the root.
+      #permalink: /pages/:name/ # make URL of pages in the folder _pages as on the root.
+      layout: default
+      #sidebar:
+        #nav: "main"
+
+## Navigation
+## List links that should appear in the site sidebar here
+# navigation:
+# - text: Introduction
+#   internal: true
+#   url: ./
+# - text: Add a new page
+#   internal: true
+#   url: add-a-new-page
+# - text: Configure the Guide
+#   internal: true
+#   url: configure-the-guide
+# - text: GitHub Setup
+#   internal: true
+#   url: github
