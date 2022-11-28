@@ -5,8 +5,8 @@ description: Project Documentation
 logo: "assets/favicon-194x194.png" # path of site logo, e.g. "/assets/images/logo.png"
 
 # Build settings
-include: ["_pages", "pages"]
-## include: - _pages
+# include: ["_pages", "pages"]
+### include: - _pages
 
 markdown: kramdown
 
@@ -23,19 +23,6 @@ collections:
     #permalink: /:name/
 
 baseurl: '/test1b'
-
-defaults:
-  # _pages
-  - 
-    scope:
-      path: ""
-      type: pages
-    values:
-      #permalink: /:path/ # make URL of pages in the folder _pages as on the root.
-      #permalink: /pages/:name/ # make URL of pages in the folder _pages as on the root.
-      layout: default
-      #sidebar:
-        #nav: "main"
 
 ## Navigation
 ## List links that should appear in the site sidebar here
