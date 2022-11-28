@@ -7,7 +7,10 @@ title: CADRE User Guide
 
 **Table of Contents**
 
-{% include toc.html html=content h_min=2 h_max=3 %}
+<!-- {% include toc.html html=content h_min=2 h_max=3 %} -->
+{% capture post_content %}{% include toc.html html=content h_min=2 h_max=3 %}{% endcapture %}
+{% include toc.html html=post_content h_min=2 h_max=3 %}
+{{ post_content }} 
 
 ## About
 
