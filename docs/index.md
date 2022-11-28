@@ -4,7 +4,7 @@
 
 **Table of Contents**
 
-{% include toc.html html=content h_min=2 toc_max=3 %}
+{% include toc.html html=content h_min=2 h_max=3 %}
 
 ## About
 
