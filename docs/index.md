@@ -2,16 +2,9 @@
 
 <!-- [Technical Documentation](technical_docs/tech_doc.md) -->
 
-## Table of Contents
+**Table of Contents**
 
-### About
-
-### Getting Started
-
-### Usage
-- [Using Query Builder inside the CADRE platform](#using-query-builder-inside-the-cadre-platform)
-- [View Query Results](#view-query-results)
-- [Using Jupyter Notebook](#using-jupyter-notebook)
+{% include toc.html html=content h_min=2 toc_max=3 %}
 
 ## About
 
