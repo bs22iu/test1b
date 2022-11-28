@@ -15,13 +15,6 @@ kramdown:
   syntax_highlighter: rouge
 
 
-collections:
-  pages:
-    output: true
-    #permalink: /:pages/:path/
-    #permalink: /:path/
-    #permalink: /:name/
-
 baseurl: '/test1b'
 
 
