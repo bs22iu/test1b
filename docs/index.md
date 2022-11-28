@@ -5,7 +5,7 @@ title: CADRE User Guide
 
 <!-- [Technical Documentation](technical_docs/tech_doc.md) -->
 
-**Table of Contents**
+# CADRE User Guide
 
 ## About
 
