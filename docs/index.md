@@ -1,4 +1,7 @@
-# CADRE User Guide
+---
+layout: default
+title: CADRE User Guide
+---
 
 <!-- [Technical Documentation](technical_docs/tech_doc.md) -->
 
