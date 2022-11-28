@@ -125,7 +125,7 @@ There are 4 sections to complete before submitting a query.
     ![Untitled](index/Untitled%207.png)
     
 
-### **View Query Results**
+### View Query Results
 
 Once your query is “Completed”, your results are automatically saved to a personal workspace in a folder labeled “query-results”. There are two ways to display the query results using Jupyter Notebook.
 
