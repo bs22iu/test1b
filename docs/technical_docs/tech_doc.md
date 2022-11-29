@@ -1,28 +1,11 @@
-# **CADRE Technical Documentation**
+---
+layout: default
+title: CADRE Technical Documentation
+---
 
-## **Table of Contents**
+# CADRE Technical Documentation
 
-- [CADRE Architecture Overview](#cadre-gateway-overview)
-- [CADRE Glossary](#cadre-glossary)
-- [CADRE backend components](#cadre-backend-components)
-    - [Dev VPC and Production VPC](#dev-vpc-and-production-vpc)
-    - [CADRE-federated-login system](#cadre-federated-login-system-fls)
-    - [CADRE meta database](#cadre-meta-database)
-    - [CADRE listeners](#cadre-listeners)
-        - Job Listeners
-        - Tool creation Listener
-        - Package run Listener
-    - [Notebooks](#notebooks)
-    - [Kubernetes cluster](#kubernetes-cluster)
-    - [Janus Graph](#janus-graph)
-    - [CADRE Datasets](#cadre-datasets)
-    - [AWS operations and services](#aws-operations-and-services)
-- [Architecture Maintenance](#architecture-maintenance)
-- [Wiki to other components](#wiki-to-other-components)
-- [Contributors](#contributors)
-
-
-## **CADRE Glossary**
+## CADRE Glossary
 ### Abbreviations
 - RAC - Research Assets Commons
 - QI - Query Interface
