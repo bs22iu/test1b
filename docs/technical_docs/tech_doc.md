@@ -26,7 +26,7 @@ title: CADRE Technical Documentation
 - Server - Computer that is used to host microservices or databases. Can be actual nodes or VMs in a cloud solution
 - Cadre Auth Token - an authentication token created by the FLS used to authenticate a user across the CADRE Network Servers
 
-## **CADRE Gateway Overview**
+## CADRE Gateway Overview
 
 ![Gatewate Architecture](figures/cadre_architecture.png)
 
@@ -51,7 +51,7 @@ Creating a tool is a little more complex. A user will create a python script in 
 Creating a package is a matter of choosing an available tool and an available data archive. The information is saved to a database and made available to users through the marketplace. When a user runs a package, a message is again put on an SQS queue. A listener will watch for a message and download the tool and dataset to a user’s EFS space. A docker container is created and automatically run, using the tool scripts and the given archive. The resulting output is saved to the user’s EFS space and is viewable through the Jupyter notebook, just like query results.
 
 
-## **CADRE backend components**
+## CADRE backend components
 
 ### Dev VPC and Production VPC
 Dev/Prod VPC:
