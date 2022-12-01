@@ -34,7 +34,21 @@
         <p><b>Table of Contents</b></p>
         <!-- <h3>Table of Contents</h3> -->
         <!-- {% include toc.html html=content %} -->
-        {% include toc.html html=content h_min=2 h_max=3 class="tree.section" %}
+        <!-- {% include toc.html html=content h_min=2 h_max=3 class="tree.section" %} -->
+
+        {% capture anchor %}
+          <li class="section">
+            <input type="checkbox" id="groupB" />
+            <label for="groupB">Group B</label>
+          </li>
+        {% endcapture %}
+
+          {% capture post_content %}{% include anchor_headings.html html=content anchorBody=anchor generateId=true %}{% endcapture %}
+          <!-- Make sure to feed content **with** heading ids to correctly generate the TOC -->
+          {% include toc.html html=post_content sanitize=true %}
+      
+          <!-- Render the content since you are just capturing it up above -->
+          <!-- {{ post_content }}     -->
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -46,7 +60,8 @@
         
       </header>
       <section>
-      {{ content }}
+      <!-- {{ content }} -->
+      {{ post_content }}
       </section>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
