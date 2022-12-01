@@ -43,11 +43,13 @@
         {% endcapture %}
 
         {% capture anchorDetails %}
-          class="section" <input type="checkbox"/>
+          class="section" input type="checkbox"
         {% endcapture %}
 
           <!-- {% capture post_content %}{% include anchor_headings.html html=content anchorBody=anchor generateId=true %}{% endcapture %} -->
-          {% capture post_content %}{% include anchor_headings.html html=content anchorAttrs=anchorDetails generateId=true %}{% endcapture %}
+          {% capture post_content %}
+            {% include anchor_headings.html html=content beforeHeading=true anchorAttrs=anchorDetails generateId=true %}
+          {% endcapture %}
 
 
           <!-- Make sure to feed content **with** heading ids to correctly generate the TOC -->
