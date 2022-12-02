@@ -31,7 +31,7 @@
           {:toc}
         </details>
 
-        {% capture markdown %}
+        {% capture html %}
         <div class="row">
           <input id="togList1" type="checkbox">
           <label for="togList1">
@@ -47,7 +47,8 @@
           </div>
         </div>
         {% endcapture %}
-        {% assign text = markdown | markdownify %}
+        {% assign text = html %}
+        <!-- {% assign text = markdown | markdownify %} -->
         {% include toc.html html=text %}
 
         <p><b>Table of Contents</b></p>
