@@ -36,11 +36,11 @@
         <!-- {% include toc.html html=content %} -->
         <!-- {% include toc.html html=content h_min=2 h_max=3 class="tree.section" %} -->
 
-        {% include toc.html html=content submenu_class="submenu-%level%" %}
+        <!-- {% include toc.html html=content submenu_class="submenu-%level%" %} -->
 
         {% capture anchor %}
           <li class="section">
-            <input type="checkbox" id="groupB" />
+            <input type="checkbox"/>
           </li>
         {% endcapture %}
 
@@ -48,7 +48,7 @@
           class="section" <input type="checkbox"/>
         {% endcapture %}
 
-        <!-- {% capture post_content %}{% include anchor_headings.html html=content anchorBody=anchor generateId=true %}{% endcapture %} -->
+        {% capture post_content %}{% include anchor_headings.html html=content beforeHeading=true anchorBody=anchor generateId=true %}{% endcapture %}
         <!-- {% capture post_content %}
           {% include anchor_headings.html html=content beforeHeading=true anchorAttrs=anchorDetails generateId=true %}
         {% endcapture %} -->
@@ -70,8 +70,8 @@
         
       </header>
       <section>
-      {{ content }}
-      <!-- {{ post_content }} -->
+      <!-- {{ content }} -->
+      {{ post_content }}
       </section>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
