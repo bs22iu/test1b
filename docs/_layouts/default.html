@@ -64,7 +64,7 @@
         {% endcapture %}
 
         {% capture post_content %}
-          {% include anchor_headings.html html=content beforeHeading=true anchorBody=anchor generateId=true %}
+          {% include anchor_headings.html html=content anchorBody=anchor generateId=true %}
         {% endcapture %}
         <!-- {% capture post_content %}
           {% include anchor_headings.html html=content beforeHeading=true anchorAttrs=anchorDetails generateId=true %}
