@@ -5,7 +5,7 @@ title: CADRE Technical Documentation
 
 # CADRE Technical Documentation
 
-## CADRE Glossary
+## CADRE Glossary 
 ### Abbreviations
 - RAC - Research Assets Commons
 - QI - Query Interface
