@@ -109,6 +109,7 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+  overflow-y: auto;
 }
 
 ul.downloads {
@@ -215,6 +216,7 @@ footer {
 
   header {
     padding-right:320px;
+    overflow-y: auto;
   }
 
   section {
@@ -243,10 +245,12 @@ footer {
 
   header {
     padding:0;
+    overflow-y: auto;
   }
 
   header ul, header p.view {
     position:static;
+    overflow-y: auto;
   }
 
   pre, code {
