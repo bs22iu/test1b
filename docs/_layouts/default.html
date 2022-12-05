@@ -54,11 +54,15 @@
         <!-- {% include toc.html html=content %} -->
         <!-- {% include toc.html html=content h_min=2 h_max=3 class="tree.section" %} -->
 
-        {% include toc.html html=content id="togList" anchor_class="input type='checkbox'" submenu_class="list" %}
+        {% capture anchor %}
+            <input id="togList1" type="checkbox">
+        {% endcapture %}
 
-        <!-- {% capture post_content %}
-          {% include anchor_headings.html html=content anchorBody=anchor generateId=true %}
-        {% endcapture %} -->
+        {% capture post_content %}
+          {% include anchor_headings.html html=content anchorBody=anchor %}
+        {% endcapture %}
+
+        {% include toc.html html=post_content h_min=2 h_max=3 submenu_class="list" %}
 
         <!-- {% capture post_content %}
           {% include anchor_headings.html html=content beforeHeading=true anchorAttrs=anchorDetails generateId=true %}
