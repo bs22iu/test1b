@@ -7,7 +7,7 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | append: site.github.build_revision | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | append: site.github.build_revision | relative_url }}"> -->
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -25,55 +25,20 @@
         <!-- <h2>{{ site.description | default: site.github.project_tagline }}</h2> -->
         <!-- <h2>CADRE User Guide</h2> -->
         
-        <details markdown="block">
+        <!-- <details markdown="block">
           <summary>
             CONTENTS
           </summary>
           {:toc}
-        </details>
+        </details> -->
 
-        
-        <div class="row">
-          <input id="togList1" type="checkbox">
-          <label for="togList1">
-            <span>Expand</span>
-            <span>Collapse</span>
-          </label>
-          <div class="list">
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-            </ul>
-          </div>
-        </div>
-        
 
         <p><b>Table of Contents</b></p>
         <!-- <h3>Table of Contents</h3> -->
         <!-- {% include toc.html html=content %} -->
         <!-- {% include toc.html html=content h_min=2 h_max=3 class="tree.section" %} -->
 
-        {% capture anchor %}
-            <input id="togList1" type="checkbox">
-        {% endcapture %}
-
-        {% capture post_content %}
-          {% include anchor_headings.html html=content bodyPrefix=anchor %}
-        {% endcapture %}
-
-        {% include toc.html html=post_content h_min=2 h_max=3 submenu_class="list" %}
-
-        <!-- {% capture post_content %}
-          {% include anchor_headings.html html=content beforeHeading=true anchorAttrs=anchorDetails generateId=true %}
-        {% endcapture %} -->
-
-
-        <!-- Make sure to feed content **with** heading ids to correctly generate the TOC -->
-        <!-- {% include toc.html html=post_content h_min=2 h_max=3 %} -->
-    
-        <!-- Render the content since you are just capturing it up above -->
-        <!-- {{ post_content }}     -->
+        {% include toc.html html=content h_min=2 h_max=3 submenu_class="list" %}
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -85,13 +50,12 @@
         
       </header>
       <section>
-      <!-- {{ content }} -->
-      {{ post_content }}
+      {{ content }}
       </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script>
+    <!-- <script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script> -->
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
