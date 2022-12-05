@@ -29,18 +29,16 @@
 $(function() {
 
     var count = 1;
-    var lisize = $( "ul > li" ).length;
-
-    $( "ul > li" ).each(function(){
-
-        if (count <= lisize) {
-            $( "ul > li:nth-child(" + count + ") > a" ).attr ("href", ".collapse"+count);
-            $( "ul > li:nth-child(" + count + ") > a" ).attr ("data-toggle", "collapse");
-
-            $( "ul > li:nth-child(" + count + ") > ul" ).addClass( "collapse collapse"+count );
-
-            count++;    
-        }
+    var lisize = $("#maintoc > li").length;
+  
+    $("#maintoc > li").each(function() {
+      if ($(this).children("ul").children("li").length > 0) {
+        $(this).children("a").attr("href", ".collapse" + count);
+        $(this).children("a").attr("data-toggle", "collapse");
+        $(this).children("ul").addClass("collapse collapse" + count);
+  
+        count++;
+      }
     });
-
-});
+  
+  });
