@@ -235,6 +235,7 @@ footer {
     position:absolute;
     right:50px;
     top:52px;
+    overflow-y: auto;
   }
 }
 
@@ -369,52 +370,6 @@ input[type='checkbox'] {
 }
 .tree li:last-child {
   border: 0;
-}
-
-/* (B) SUB-SECTIONS */
-/* (B1) TOGGLE SHOW/HIDE */
-.section ul { display: none; }
-.section input:checked ~ ul { display: block; }
-
-/* (B2) HIDE CHECKBOX */
-.section input[type=checkbox] { display: none; }
-
-/* (B3) ADD EXPAND/COLLAPSE ICON  */
-.section { 
-  position: relative; 
-  padding-left: 35px !important;
-}
-.section label:after {
-  content: "\0002B";
-  position: absolute;
-  top: 0; left: 0;
-  padding: 10px;
-  text-align: center;
-  font-size: 30px;
-  color: #f00;
-  transition: all 0.5s;
-}
-.section input:checked ~ label:after { 
-  color: #23c37a;
-  transform: rotate(45deg);
-}
-
-/* (B4) SUB-SECTION ITEMS */
-.section ul { margin-top: 10px; }
-.section ul li { color: #d43d3d; }
-
-
-[id^="togList"],                        /* HIDE CHECKBOX */
-[id^="togList"] ~ .list,                /* HIDE LIST */
-[id^="togList"] + label  span + span,   /* HIDE "Collapse" */
-[id^="togList"]:checked + label span{   /* HIDE "Expand" (IF CHECKED) */
-  display:none;
-}
-[id^="togList"]:checked + label span + span{
-  display:inline-block;                 /* SHOW "Collapse" (IF CHECKED) */
-}
-[id^="togList"]:checked ~ .list{
-  display:block;                        /* SHOW LIST (IF CHECKED) */
 }
 
 /* adds scrollbar to sidenav */
