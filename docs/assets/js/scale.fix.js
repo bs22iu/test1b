@@ -25,3 +25,22 @@
         document.addEventListener("touchend", gestureEnd, false);
     }
 })(document);
+
+$(function() {
+
+    var count = 1;
+    var lisize = $( "ul > li" ).length;
+
+    $( "ul > li" ).each(function(){
+
+        if (count <= lisize) {
+            $( "ul > li:nth-child(" + count + ") > a" ).attr ("href", ".collapse"+count);
+            $( "ul > li:nth-child(" + count + ") > a" ).attr ("data-toggle", "collapse");
+
+            $( "ul > li:nth-child(" + count + ") > ul" ).addClass( "collapse collapse"+count );
+
+            count++;    
+        }
+    });
+
+});
