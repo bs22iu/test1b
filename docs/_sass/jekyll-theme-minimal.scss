@@ -203,12 +203,14 @@ footer {
   div.wrapper {
     width:auto;
     margin:0;
+    overflow-y: auto;
   }
 
   header, section, footer {
     float:none;
     position:static;
     width:auto;
+    overflow-y: auto;
   }
 
   header {
@@ -220,7 +222,7 @@ footer {
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   header a small {
