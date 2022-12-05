@@ -175,6 +175,8 @@ section {
   width:500px;
   float:right;
   padding-bottom:50px;
+  height: 100%;
+  overflow-y: auto;
 }
 
 small {
@@ -406,4 +408,10 @@ input[type='checkbox'] {
 }
 [id^="togList"]:checked ~ .list{
   display:block;                        /* SHOW LIST (IF CHECKED) */
+}
+
+/* adds scrollbar to sidenav */
+.wy-side-scroll {
+  width: auto;
+  overflow-y: auto;
 }
