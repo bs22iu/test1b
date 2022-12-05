@@ -211,11 +211,11 @@ footer {
     top: 0;
     left: 0;
     bottom: 0;
-    padding-left: 5px !important;
-    padding-top: 5px;
+    padding-left: 20px !important;
+    padding-top: 20px;
     text-align: left;
     height: 100%;
-    overflow: scroll;
+    overflow-y: auto;
   }
   }
 
