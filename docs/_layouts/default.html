@@ -59,7 +59,7 @@
         {% endcapture %}
 
         {% capture post_content %}
-          {% include anchor_headings.html html=content beforeHeading=TRUE anchorBody=anchor %}
+          {% include anchor_headings.html html=content headerAttrs=anchor %}
         {% endcapture %}
 
         {% include toc.html html=post_content h_min=2 h_max=3 submenu_class="list" %}
