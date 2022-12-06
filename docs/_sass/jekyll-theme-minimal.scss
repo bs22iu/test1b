@@ -205,7 +205,15 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-@media (min-width: 20rem) {
+
+@media print, screen and (max-width: 960px) {
+
+  div.wrapper {
+    width:auto;
+    margin:0;
+    overflow-y: scroll;
+  }
+
   header.sidebar {
     position:fixed;
     top: 0;
@@ -218,15 +226,6 @@ footer {
     text-align: left;
     height: 100%;
     overflow-y: auto;
-  }
-  }
-
-@media print, screen and (max-width: 960px) {
-
-  div.wrapper {
-    width:auto;
-    margin:0;
-    overflow-y: scroll;
   }
 
   header, section, footer {
@@ -264,6 +263,20 @@ footer {
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
+  }
+
+  header.sidebar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20rem;
+    padding-left: 45px !important;
+    padding-right: 50px;
+    padding-top: 40px;
+    text-align: left;
+    height: 100%;
+    overflow-y: auto;
   }
 
   header {
