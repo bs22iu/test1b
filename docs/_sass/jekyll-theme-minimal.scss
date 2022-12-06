@@ -104,18 +104,18 @@ img {
   max-width:100%;
 }
 
+header.sidebar  {
+  width:270px;
+  float:left;
+  overflow-y: auto;
+}
+
 header {
   width:270px;
   float:left;
   position:fixed;
   overflow-y: auto;
   -webkit-font-smoothing:subpixel-antialiased;
-}
-
-header.sidebar  {
-  width:270px;
-  float:left;
-  overflow-y: auto;
 }
 
 ul.downloads {
@@ -308,6 +308,13 @@ footer {
   pre, code {
     word-wrap:normal;
   }
+}
+
+@media print, screen and (max-width: 600px) {
+  body {
+    padding:15px;
+  }
+
 }
 
 @media print, screen and (max-width: 480px) {
