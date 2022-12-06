@@ -227,14 +227,14 @@ footer {
     overflow-y: auto;
   }
 
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
-
   header {
     padding-right:320px;
+  }
+
+  header ul {
+    position:absolute;
+    right:50px;
+    top:52px;
   }
 
   section {
@@ -248,12 +248,7 @@ footer {
   header a small {
     display:inline;
   }
-
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
+  
 }
 
 /* FOR small windows */
