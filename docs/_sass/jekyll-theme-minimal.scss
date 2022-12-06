@@ -271,14 +271,16 @@ footer {
   }
 }
 
+/* FOR small windows */
 @media print, screen and (max-width: 600px) {
   body {
     padding:15px;
     word-wrap:break-word;
   }
 
-  header {
+  header.sidebar {
     padding:0;
+    overflow: auto;
     /*overflow-y: auto;*/
   }
 
