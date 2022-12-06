@@ -264,9 +264,12 @@ footer {
     
   }
 
-  div.wrapper {
-    width:auto;
+  .wrapper {
+    max-width: 500px;
+    padding: 10px;
+    overflow: auto;
     margin:0;
+    flex: auto;
   }
 
   header, section, footer {
