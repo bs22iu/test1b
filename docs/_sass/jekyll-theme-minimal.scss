@@ -226,6 +226,7 @@ footer {
     height: 100%;
     overflow-y: auto;
   }
+
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
@@ -256,15 +257,13 @@ footer {
     flex: auto;
   }
 
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
+  section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+    /*overflow-y: auto;*/
   }
-
-  /*header {
-    padding:0;
-  }*/
 
   header ul, header p.view {
     position:static;
