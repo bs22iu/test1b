@@ -266,8 +266,8 @@ footer {
   }
 
   header ul, header p.view {
+    /*position:static;*/
     position:static;
-    /*overflow-y: auto;*/
   }
 
   pre, code {
