@@ -208,6 +208,11 @@ footer {
 
 @media print, screen and (min-width: 601px) {
 
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+
   header.sidebar {
     position:fixed;
     top: 0;
@@ -220,6 +225,12 @@ footer {
     text-align: left;
     height: 100%;
     overflow-y: auto;
+  }
+
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
   }
 
   header {
