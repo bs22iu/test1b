@@ -279,15 +279,15 @@ footer {
     word-wrap:break-word;
   }
 
-  header {
-    padding:0;
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
   }
 
-  header.sidebar {
+  /*header {
     padding:0;
-    /*overflow: auto;*/
-    /*overflow-y: auto;*/
-  }
+  }*/
 
   header ul, header p.view {
     position:static;
