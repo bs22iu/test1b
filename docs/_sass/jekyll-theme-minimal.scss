@@ -257,6 +257,11 @@ footer {
     flex: auto;
   }
 
+  header.sidebar {
+    float:none;
+    position:static;
+  }
+
   section{
     float:none;
     min-width: 500px;
