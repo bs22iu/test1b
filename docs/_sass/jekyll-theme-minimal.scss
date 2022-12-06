@@ -220,8 +220,8 @@ footer {
     padding-right: 50px;
     padding-top: 40px;
     text-align: left;
-    height: 100%;
-    overflow-y: auto;
+    /*height: 100%;*/
+    /*overflow-y: auto;*/
   }
 
   header, section, footer {
@@ -239,7 +239,7 @@ footer {
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   header a small {
