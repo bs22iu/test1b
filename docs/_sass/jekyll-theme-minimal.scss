@@ -208,7 +208,6 @@ footer {
   div.wrapper {
     width:auto;
     margin:0;
-    overflow-y: scroll;
   }
 
   header.sidebar {
@@ -229,12 +228,10 @@ footer {
     float:none;
     position:static;
     width:auto;
-    overflow-y: scroll;
   }
 
   header {
     padding-right:320px;
-    overflow-y: auto;
   }
 
   section {
@@ -253,7 +250,6 @@ footer {
     position:absolute;
     right:50px;
     top:52px;
-    overflow-y: auto;
   }
 }
 
