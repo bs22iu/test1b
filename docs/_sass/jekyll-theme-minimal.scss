@@ -260,6 +260,18 @@ footer {
   }
 }
 
+@media print, screen and (max width: 600px) {
+  header.sidebar {
+    position:static;
+    padding-left: 45px !important;
+    padding-right: 50px;
+    padding-top: 40px;
+    text-align: left;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
 @media print, screen and (min-width: 601px) {
   header.sidebar {
     position:fixed;
@@ -314,7 +326,6 @@ footer {
   body {
     padding:15px;
   }
-
 }
 
 @media print, screen and (max-width: 480px) {
