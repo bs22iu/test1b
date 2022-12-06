@@ -257,17 +257,15 @@ footer {
     flex: auto;
   }
 
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-    /*overflow-y: auto;*/
+  section{
+    float:none;
+    min-width: 500px;
+    padding: 10px;
+    margin-right: 20px;
   }
 
   header ul, header p.view {
-    /*position:static;*/
-    position:fixed;
+    position:static;
   }
 
   pre, code {
