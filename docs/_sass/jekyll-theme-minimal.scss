@@ -279,9 +279,13 @@ footer {
     word-wrap:break-word;
   }
 
+  header {
+    padding:0;
+  }
+
   header.sidebar {
     padding:0;
-    overflow: auto;
+    /*overflow: auto;*/
     /*overflow-y: auto;*/
   }
 
