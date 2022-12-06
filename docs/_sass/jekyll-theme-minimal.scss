@@ -107,11 +107,13 @@ img {
 header.sidebar  {
   width:270px;
   float:left;
+  position:fixed;
 }
 
 header {
   width:270px;
   float:left;
+  position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
