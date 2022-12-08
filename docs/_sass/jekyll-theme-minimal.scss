@@ -250,7 +250,8 @@ footer {
   }
 
   .wrapper {
-    max-width: 500px;
+    /*max-width: 500px;*/
+    width: auto;
     padding: 10px;
     overflow: auto;
     margin:0;
@@ -264,7 +265,8 @@ footer {
 
   section{
     float:none;
-    min-width: 500px;
+    /*min-width: 500px;*/
+    width: auto;
     padding: 10px;
     margin-right: 20px;
   }
