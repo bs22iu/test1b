@@ -207,7 +207,7 @@ footer {
 
 
 /* FOR LARGE windows */
-@media print, screen and (min-width: 1021px) {
+@media print, screen and (min-width: 1321px) {
 
   div.wrapper {
     width:auto;
@@ -245,7 +245,7 @@ footer {
 }
 
 /* FOR MEDIUM windows */
-@media print, screen and (min-width: 821px) and (max-width: 1020){
+@media print, screen and (min-width: 821px) and (max-width: 1320){
 
   div.wrapper {
     width:auto;
