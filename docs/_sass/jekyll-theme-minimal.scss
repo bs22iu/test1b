@@ -207,7 +207,7 @@ footer {
 
 
 /* FOR LARGE windows */
-@media print, screen and (min-width: 1221px) {
+@media print, screen and (min-width: 921px) {
 
   div.wrapper {
     width:auto;
@@ -219,7 +219,7 @@ footer {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 20rem;
+    width: 18rem;
     padding-left: 45px !important;
     padding-right: 50px;
     padding-top: 40px;
@@ -229,45 +229,10 @@ footer {
   }
 
   section {
-    width:700px;
-    float:right;
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-    /*overflow-y: auto;*/
-  }
-
-  header a small {
-    display:inline;
-  }
-  
-}
-
-/* FOR MEDIUM windows */
-@media print, screen and (min-width: 921px) and (max-width: 1220){
-
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
-  header.sidebar {
-    position:fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 16rem;
-    padding-left: 45px !important;
-    padding-right: 50px;
-    padding-top: 40px;
-    text-align: left;
-    height: 100%;
-    overflow-y: auto;
-  }
-
-  section {
-    width:450px;
+    /*width:700px;*/
+    min-width: 50%;
+    max-width: 100%;
+    width: calc((700px - 100%) * 700);
     float:right;
     border:1px solid #e5e5e5;
     border-width:1px 0;
